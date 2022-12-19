@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+              "id": 1,
+              "username":"user",
+              "password": "abc@123",
+              "dob": "12/08/1999",
+              "email": "mockemail@gmail.com"
+
+    }
+  ]
+
+}
