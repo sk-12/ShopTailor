@@ -1,17 +1,13 @@
-import React, {useState} from 'react';
-import {SafeAreaView, Button} from 'react-native';
-import Circle from './Components/Stepper/Circle';
+import React from 'react';
+import AppNavigation from "./Navigators/AppNavigation";
+import {NavigationContainer} from "@react-navigation/native";
 
 export default function App() {
-  const [state, setState] = useState(0);
-  return (
-    <SafeAreaView
-      style={{
-        height: '100%',
-        backgroundColor: '#FCFFE7',
-      }}>
-      <Circle state={state} />
-      <Button title="click" onPress={() => setState(state + 1)} />
-    </SafeAreaView>
-  );
+
+    return (
+        <NavigationContainer>
+            <AppNavigation/>
+        </NavigationContainer>
+    )
+
 }

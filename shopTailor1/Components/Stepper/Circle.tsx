@@ -13,7 +13,7 @@ const Circle = ({state}) => {
       return (
         <Content key={index}>
           <CircleContainer state1={state} index={index}>
-            <Index>{index}</Index>
+            <Index>{index+1}</Index>
           </CircleContainer>
           <Divider />
         </Content>
@@ -21,7 +21,7 @@ const Circle = ({state}) => {
     } else {
       return (
         <CircleContainer state1={state} index={index} key={index}>
-          <Index>{index}</Index>
+          <Index>{index+1}</Index>
         </CircleContainer>
       );
     }
