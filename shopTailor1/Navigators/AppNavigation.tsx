@@ -3,6 +3,7 @@ import {AppParamList} from "../Constants/paramlist";
 import {screens} from "../Constants/routes";
 import Signup from "../Screens/Signup/Signup";
 import Login from "../Screens/Login/Login";
+import Done from "../Components/Done/Done";
 
 const AppNavigation = () => {
     const Stack = createNativeStackNavigator<AppParamList>();
@@ -11,6 +12,7 @@ const AppNavigation = () => {
         <Stack.Navigator>
             <Stack.Screen name={screens.LOGIN} component={Login}/>
             <Stack.Screen name={screens.SIGNUP} component={Signup}/>
+            <Stack.Screen name={screens.DONE} component={Done}/>
         </Stack.Navigator>
 
     )

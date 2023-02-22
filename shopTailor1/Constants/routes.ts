@@ -1,4 +1,5 @@
 export const enum screens {
     LOGIN = 'Login',
-    SIGNUP = 'Signup'
+    SIGNUP = 'Signup',
+    DONE = 'Done'
 }

@@ -9,6 +9,7 @@ import {
     StyledSignupButton, SignupButtonContainer, StyledSignupButtonText, StyledText
 } from "./Login.style";
 import {screens} from "../../Constants/routes";
+import Done from "../../Components/Done/Done";
 
 const Login = ({navigation}) => {
 
@@ -25,7 +26,7 @@ const Login = ({navigation}) => {
                 <InputField label="Password" placeHolderText="Enter your Password"/>
 
                 <Container>
-                    <StyledTouchableOpacity onPress={() => {
+                    <StyledTouchableOpacity onPress={() => { navigation.navigate("Done")
                     }}>
                         <StyledButtonText> Done</StyledButtonText>
                     </StyledTouchableOpacity>
